@@ -1,15 +1,16 @@
 {
-    "display" : "LFO",
+    "display" : "LFO Metro",
     "parameters" :  [ 
         ["int","l_wave","Wave",0,3,0],
-        ["time","l_rate","Rate",0,5000,0],
+	["int","l_nbars","Number of Bars",0,32,0],
         ["pct","l_amt","Amount",0,100,10],
         ["pct","l_offset","Offset",0,100,50],
-        ["int","l_bus","Mod Bus",0,20,10]
+        ["int","l_bus","Mod Bus",0,20,15],
+        ["int","l_barlen","Bar Length",0,8,4]
     ],
     "pages" : [ 
-        ["pg_main","Main",["l_wave","l_rate","l_amt","l_offset"]],
-        ["pg_target","Target",["l_bus"]]
+        ["pg_main","Main",["l_wave","l_nbars","l_amt","l_offset"]],
+        ["pg_target","Target",["l_bus","l_barlen"]]
     ]
 }
 
